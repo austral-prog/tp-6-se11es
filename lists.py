@@ -1,9 +1,15 @@
 # Replace the "ANSWER HERE" with your answer
 
 def remove_elements(list_to_remove_elements):
-    del list_to_remove_elements[0]
-    del list_to_remove_elements[3]
-    del list_to_remove_elements[3]
+    if len(list_to_remove_elements)>=6:
+        del list_to_remove_elements[0]
+        del list_to_remove_elements[3]
+        del list_to_remove_elements[3]
+    elif len(list_to_remove_elements)>=5:
+        del list_to_remove_elements[0]
+        del list_to_remove_elements[3]
+    elif len(list_to_remove_elements)<=4:
+        del list_to_remove_elements[0]
     print(list_to_remove_elements)
 
 
